@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "catalog_version": "v-fb89904af8ba53be",
+  "root_filter": {
+    "include": [],
+    "exclude": []
+  },
+  "facets": [
+    "food",
+    "tech",
+    "art"
+  ],
+  "page_size_k": 5,
+  "budget": 30,
+  "charged_calls": 1,
+  "free_replays": 0,
+  "stop_reason": "contradiction",
+  "termination_class": "response_contradiction",
+  "complete": false,
+  "global": {
+    "root_exact_count": null,
+    "distinct_rows_held": 0,
+    "missing_exact": null,
+    "missing_bounds": [
+      null,
+      null
+    ]
+  },
+  "partition_leaves": [
+    {
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "exact_count": null,
+      "count_origin": null,
+      "known_distinct_rows": 0,
+      "missing_exact": null,
+      "missing_bounds": [
+        0,
+        null
+      ],
+      "truncated_probe": false,
+      "state": "contradicted",
+      "note": "version mismatch on {'include': [], 'exclude': []}: 'v-DRIFT' != pinned 'v-fb89904af8ba53be'",
+      "evidence_call_index": null
+    }
+  ],
+  "contradictions": [
+    "version mismatch on {'include': [], 'exclude': []}: 'v-DRIFT' != pinned 'v-fb89904af8ba53be'"
+  ],
+  "ledger": [
+    {
+      "call_index": 1,
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "k": 5,
+      "ok": true,
+      "confirmed": false,
+      "error": null,
+      "total": 8,
+      "returned": 5,
+      "version": "v-DRIFT"
+    }
+  ],
+  "booths": [],
+  "scenario": "S5b_version_drift",
+  "catalog_file": "catalog_small.json",
+  "cache_hits": 0,
+  "service_calls_charged": 1
+}

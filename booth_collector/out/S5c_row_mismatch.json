@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "catalog_version": "v-86194465943d6229",
+  "root_filter": {
+    "include": [],
+    "exclude": []
+  },
+  "facets": [
+    "food",
+    "tech",
+    "art"
+  ],
+  "page_size_k": 4,
+  "budget": 30,
+  "charged_calls": 4,
+  "free_replays": 1,
+  "stop_reason": "contradiction",
+  "termination_class": "response_contradiction",
+  "complete": false,
+  "global": {
+    "root_exact_count": 16,
+    "distinct_rows_held": 8,
+    "missing_exact": 8,
+    "missing_bounds": [
+      8,
+      8
+    ]
+  },
+  "partition_leaves": [
+    {
+      "filter": {
+        "include": [
+          "food",
+          "tech"
+        ],
+        "exclude": []
+      },
+      "exact_count": 2,
+      "count_origin": "response",
+      "known_distinct_rows": 2,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 3
+    },
+    {
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": [
+          "tech"
+        ]
+      },
+      "exact_count": null,
+      "count_origin": null,
+      "known_distinct_rows": 4,
+      "missing_exact": null,
+      "missing_bounds": [
+        0,
+        1
+      ],
+      "truncated_probe": false,
+      "state": "contradicted",
+      "note": "row 'B01' does not match its own request filter {'include': ['food'], 'exclude': ['tech']}: tags ['TAMPERED']; identity drift for booth 'B01': earlier {'id': 'B01', 'tags': ['food'], 'content': 'noodle stand'} vs later {'id': 'B01', 'tags': ['TAMPERED'], 'content': 'noodle stand [mutated]'}",
+      "evidence_call_index": null
+    },
+    {
+      "filter": {
+        "include": [],
+        "exclude": [
+          "food"
+        ]
+      },
+      "exact_count": null,
+      "count_origin": null,
+      "known_distinct_rows": 2,
+      "missing_exact": null,
+      "missing_bounds": [
+        0,
+        7
+      ],
+      "truncated_probe": false,
+      "state": "blocked",
+      "note": " | not reached before run stopped",
+      "evidence_call_index": null
+    }
+  ],
+  "contradictions": [
+    "row 'B01' does not match its own request filter {'include': ['food'], 'exclude': ['tech']}: tags ['TAMPERED']",
+    "identity drift for booth 'B01': earlier {'id': 'B01', 'tags': ['food'], 'content': 'noodle stand'} vs later {'id': 'B01', 'tags': ['TAMPERED'], 'content': 'noodle stand [mutated]'}"
+  ],
+  "ledger": [
+    {
+      "call_index": 1,
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "k": 4,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 16,
+      "returned": 4,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 2,
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": []
+      },
+      "k": 4,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 7,
+      "returned": 4,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 3,
+      "filter": {
+        "include": [
+          "food",
+          "tech"
+        ],
+        "exclude": []
+      },
+      "k": 4,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 2,
+      "returned": 2,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 4,
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": [
+          "tech"
+        ]
+      },
+      "k": 4,
+      "ok": true,
+      "confirmed": false,
+      "error": null,
+      "total": 5,
+      "returned": 4,
+      "version": "v-86194465943d6229"
+    }
+  ],
+  "booths": [
+    {
+      "id": "B01",
+      "tags": [
+        "food"
+      ],
+      "content": "noodle stand"
+    },
+    {
+      "id": "B03",
+      "tags": [
+        "food",
+        "tech"
+      ],
+      "content": "smart kitchen"
+    },
+    {
+      "id": "B05",
+      "tags": [
+        "art",
+        "food",
+        "vip"
+      ],
+      "content": "private tasting"
+    },
+    {
+      "id": "B10",
+      "tags": [
+        "art"
+      ],
+      "content": "sculpture garden"
+    },
+    {
+      "id": "B11",
+      "tags": [
+        "art",
+        "food",
+        "tech"
+      ],
+      "content": "expo pavilion"
+    },
+    {
+      "id": "B12",
+      "tags": [
+        "vip"
+      ],
+      "content": "lounge"
+    },
+    {
+      "id": "B14",
+      "tags": [
+        "art",
+        "food"
+      ],
+      "content": "cake atelier"
+    },
+    {
+      "id": "B16",
+      "tags": [
+        "food",
+        "vip"
+      ],
+      "content": "chef table"
+    }
+  ],
+  "scenario": "S5c_row_mismatch",
+  "catalog_file": "catalog_big.json",
+  "cache_hits": 1,
+  "service_calls_charged": 4
+}

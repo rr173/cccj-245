@@ -1,0 +1,122 @@
+{
+  "version": "v-86194465943d6229",
+  "booths": [
+    {
+      "id": "B01",
+      "tags": [
+        "food"
+      ],
+      "content": "noodle stand"
+    },
+    {
+      "id": "B02",
+      "tags": [
+        "tech"
+      ],
+      "content": "robot demo"
+    },
+    {
+      "id": "B03",
+      "tags": [
+        "food",
+        "tech"
+      ],
+      "content": "smart kitchen"
+    },
+    {
+      "id": "B04",
+      "tags": [
+        "art"
+      ],
+      "content": "watercolor wall"
+    },
+    {
+      "id": "B05",
+      "tags": [
+        "art",
+        "food",
+        "vip"
+      ],
+      "content": "private tasting"
+    },
+    {
+      "id": "B06",
+      "tags": [],
+      "content": "silent booth"
+    },
+    {
+      "id": "B07",
+      "tags": [
+        "tech",
+        "vip"
+      ],
+      "content": "invite-only VR"
+    },
+    {
+      "id": "B08",
+      "tags": [
+        "art",
+        "tech"
+      ],
+      "content": "generative visuals"
+    },
+    {
+      "id": "B09",
+      "tags": [
+        "food"
+      ],
+      "content": "bakery"
+    },
+    {
+      "id": "B10",
+      "tags": [
+        "art"
+      ],
+      "content": "sculpture garden"
+    },
+    {
+      "id": "B11",
+      "tags": [
+        "art",
+        "food",
+        "tech"
+      ],
+      "content": "expo pavilion"
+    },
+    {
+      "id": "B12",
+      "tags": [
+        "vip"
+      ],
+      "content": "lounge"
+    },
+    {
+      "id": "B13",
+      "tags": [
+        "tech"
+      ],
+      "content": "drone cage"
+    },
+    {
+      "id": "B14",
+      "tags": [
+        "art",
+        "food"
+      ],
+      "content": "cake atelier"
+    },
+    {
+      "id": "B15",
+      "tags": [],
+      "content": "info desk"
+    },
+    {
+      "id": "B16",
+      "tags": [
+        "food",
+        "vip"
+      ],
+      "content": "chef table"
+    }
+  ]
+}

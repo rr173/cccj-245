@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "catalog_version": "v-86194465943d6229",
+  "root_filter": {
+    "include": [],
+    "exclude": []
+  },
+  "facets": [
+    "food",
+    "tech",
+    "art"
+  ],
+  "page_size_k": 3,
+  "budget": 60,
+  "charged_calls": 13,
+  "free_replays": 1,
+  "stop_reason": "completed",
+  "termination_class": "completed",
+  "complete": true,
+  "global": {
+    "root_exact_count": 16,
+    "distinct_rows_held": 16,
+    "missing_exact": 0,
+    "missing_bounds": [
+      0,
+      0
+    ]
+  },
+  "partition_leaves": [
+    {
+      "filter": {
+        "include": [
+          "food",
+          "tech"
+        ],
+        "exclude": []
+      },
+      "exact_count": 2,
+      "count_origin": "response",
+      "known_distinct_rows": 2,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 3
+    },
+    {
+      "filter": {
+        "include": [
+          "art",
+          "food"
+        ],
+        "exclude": [
+          "tech"
+        ]
+      },
+      "exact_count": 2,
+      "count_origin": "response",
+      "known_distinct_rows": 2,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 5
+    },
+    {
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": [
+          "art",
+          "tech"
+        ]
+      },
+      "exact_count": 3,
+      "count_origin": "response",
+      "known_distinct_rows": 3,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 6
+    },
+    {
+      "filter": {
+        "include": [
+          "art",
+          "tech"
+        ],
+        "exclude": [
+          "food"
+        ]
+      },
+      "exact_count": 1,
+      "count_origin": "response",
+      "known_distinct_rows": 1,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 9
+    },
+    {
+      "filter": {
+        "include": [
+          "tech"
+        ],
+        "exclude": [
+          "art",
+          "food"
+        ]
+      },
+      "exact_count": 3,
+      "count_origin": "response",
+      "known_distinct_rows": 3,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 10
+    },
+    {
+      "filter": {
+        "include": [
+          "art"
+        ],
+        "exclude": [
+          "food",
+          "tech"
+        ]
+      },
+      "exact_count": 2,
+      "count_origin": "response",
+      "known_distinct_rows": 2,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 12
+    },
+    {
+      "filter": {
+        "include": [],
+        "exclude": [
+          "art",
+          "food",
+          "tech"
+        ]
+      },
+      "exact_count": 3,
+      "count_origin": "response",
+      "known_distinct_rows": 3,
+      "missing_exact": 0,
+      "missing_bounds": [
+        0,
+        0
+      ],
+      "truncated_probe": false,
+      "state": "explored",
+      "note": null,
+      "evidence_call_index": 13
+    }
+  ],
+  "contradictions": [],
+  "ledger": [
+    {
+      "call_index": 1,
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 16,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 2,
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": []
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 7,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 3,
+      "filter": {
+        "include": [
+          "food",
+          "tech"
+        ],
+        "exclude": []
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 2,
+      "returned": 2,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 4,
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": [
+          "tech"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 5,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 5,
+      "filter": {
+        "include": [
+          "art",
+          "food"
+        ],
+        "exclude": [
+          "tech"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 2,
+      "returned": 2,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 6,
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": [
+          "art",
+          "tech"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 3,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 7,
+      "filter": {
+        "include": [],
+        "exclude": [
+          "food"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 9,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 8,
+      "filter": {
+        "include": [
+          "tech"
+        ],
+        "exclude": [
+          "food"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 4,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 9,
+      "filter": {
+        "include": [
+          "art",
+          "tech"
+        ],
+        "exclude": [
+          "food"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 1,
+      "returned": 1,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 10,
+      "filter": {
+        "include": [
+          "tech"
+        ],
+        "exclude": [
+          "art",
+          "food"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 3,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 11,
+      "filter": {
+        "include": [],
+        "exclude": [
+          "food",
+          "tech"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 5,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 12,
+      "filter": {
+        "include": [
+          "art"
+        ],
+        "exclude": [
+          "food",
+          "tech"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 2,
+      "returned": 2,
+      "version": "v-86194465943d6229"
+    },
+    {
+      "call_index": 13,
+      "filter": {
+        "include": [],
+        "exclude": [
+          "art",
+          "food",
+          "tech"
+        ]
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 3,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    }
+  ],
+  "booths": [
+    {
+      "id": "B01",
+      "tags": [
+        "food"
+      ],
+      "content": "noodle stand"
+    },
+    {
+      "id": "B02",
+      "tags": [
+        "tech"
+      ],
+      "content": "robot demo"
+    },
+    {
+      "id": "B03",
+      "tags": [
+        "food",
+        "tech"
+      ],
+      "content": "smart kitchen"
+    },
+    {
+      "id": "B04",
+      "tags": [
+        "art"
+      ],
+      "content": "watercolor wall"
+    },
+    {
+      "id": "B05",
+      "tags": [
+        "art",
+        "food",
+        "vip"
+      ],
+      "content": "private tasting"
+    },
+    {
+      "id": "B06",
+      "tags": [],
+      "content": "silent booth"
+    },
+    {
+      "id": "B07",
+      "tags": [
+        "tech",
+        "vip"
+      ],
+      "content": "invite-only VR"
+    },
+    {
+      "id": "B08",
+      "tags": [
+        "art",
+        "tech"
+      ],
+      "content": "generative visuals"
+    },
+    {
+      "id": "B09",
+      "tags": [
+        "food"
+      ],
+      "content": "bakery"
+    },
+    {
+      "id": "B10",
+      "tags": [
+        "art"
+      ],
+      "content": "sculpture garden"
+    },
+    {
+      "id": "B11",
+      "tags": [
+        "art",
+        "food",
+        "tech"
+      ],
+      "content": "expo pavilion"
+    },
+    {
+      "id": "B12",
+      "tags": [
+        "vip"
+      ],
+      "content": "lounge"
+    },
+    {
+      "id": "B13",
+      "tags": [
+        "tech"
+      ],
+      "content": "drone cage"
+    },
+    {
+      "id": "B14",
+      "tags": [
+        "art",
+        "food"
+      ],
+      "content": "cake atelier"
+    },
+    {
+      "id": "B15",
+      "tags": [],
+      "content": "info desk"
+    },
+    {
+      "id": "B16",
+      "tags": [
+        "food",
+        "vip"
+      ],
+      "content": "chef table"
+    }
+  ],
+  "scenario": "S2_fill_truncated",
+  "catalog_file": "catalog_big.json",
+  "cache_hits": 1,
+  "service_calls_charged": 13
+}

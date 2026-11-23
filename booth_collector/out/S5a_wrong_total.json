@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "catalog_version": "v-fb89904af8ba53be",
+  "root_filter": {
+    "include": [],
+    "exclude": []
+  },
+  "facets": [
+    "food",
+    "tech",
+    "art"
+  ],
+  "page_size_k": 5,
+  "budget": 30,
+  "charged_calls": 2,
+  "free_replays": 1,
+  "stop_reason": "contradiction",
+  "termination_class": "response_contradiction",
+  "complete": false,
+  "global": {
+    "root_exact_count": 8,
+    "distinct_rows_held": 5,
+    "missing_exact": 3,
+    "missing_bounds": [
+      3,
+      3
+    ]
+  },
+  "partition_leaves": [
+    {
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": []
+      },
+      "exact_count": null,
+      "count_origin": null,
+      "known_distinct_rows": 1,
+      "missing_exact": null,
+      "missing_bounds": [
+        0,
+        7
+      ],
+      "truncated_probe": false,
+      "state": "contradicted",
+      "note": "in-request count violated on {'include': ['food'], 'exclude': []}: returned 3, expected min(k=5, total=6)=5",
+      "evidence_call_index": null
+    },
+    {
+      "filter": {
+        "include": [],
+        "exclude": [
+          "food"
+        ]
+      },
+      "exact_count": null,
+      "count_origin": null,
+      "known_distinct_rows": 4,
+      "missing_exact": null,
+      "missing_bounds": [
+        0,
+        4
+      ],
+      "truncated_probe": false,
+      "state": "blocked",
+      "note": " | not reached before run stopped",
+      "evidence_call_index": null
+    }
+  ],
+  "contradictions": [
+    "in-request count violated on {'include': ['food'], 'exclude': []}: returned 3, expected min(k=5, total=6)=5"
+  ],
+  "ledger": [
+    {
+      "call_index": 1,
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "k": 5,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 8,
+      "returned": 5,
+      "version": "v-fb89904af8ba53be"
+    },
+    {
+      "call_index": 2,
+      "filter": {
+        "include": [
+          "food"
+        ],
+        "exclude": []
+      },
+      "k": 5,
+      "ok": true,
+      "confirmed": false,
+      "error": null,
+      "total": 6,
+      "returned": 3,
+      "version": "v-fb89904af8ba53be"
+    }
+  ],
+  "booths": [
+    {
+      "id": "B02",
+      "tags": [
+        "tech"
+      ],
+      "content": "robot demo"
+    },
+    {
+      "id": "B05",
+      "tags": [
+        "art",
+        "food",
+        "vip"
+      ],
+      "content": "private tasting"
+    },
+    {
+      "id": "B06",
+      "tags": [],
+      "content": "silent booth"
+    },
+    {
+      "id": "B07",
+      "tags": [
+        "tech",
+        "vip"
+      ],
+      "content": "invite-only VR"
+    },
+    {
+      "id": "B08",
+      "tags": [
+        "art",
+        "tech"
+      ],
+      "content": "generative visuals"
+    }
+  ],
+  "scenario": "S5a_wrong_total",
+  "catalog_file": "catalog_small.json",
+  "cache_hits": 1,
+  "service_calls_charged": 2
+}

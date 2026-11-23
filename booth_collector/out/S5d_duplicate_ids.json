@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "catalog_version": "v-86194465943d6229",
+  "root_filter": {
+    "include": [],
+    "exclude": []
+  },
+  "facets": [
+    "food",
+    "tech",
+    "art"
+  ],
+  "page_size_k": 4,
+  "budget": 30,
+  "charged_calls": 1,
+  "free_replays": 0,
+  "stop_reason": "contradiction",
+  "termination_class": "response_contradiction",
+  "complete": false,
+  "global": {
+    "root_exact_count": null,
+    "distinct_rows_held": 0,
+    "missing_exact": null,
+    "missing_bounds": [
+      null,
+      null
+    ]
+  },
+  "partition_leaves": [
+    {
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "exact_count": null,
+      "count_origin": null,
+      "known_distinct_rows": 0,
+      "missing_exact": null,
+      "missing_bounds": [
+        0,
+        null
+      ],
+      "truncated_probe": false,
+      "state": "contradicted",
+      "note": "service returned duplicate IDs within one request {'include': [], 'exclude': []}",
+      "evidence_call_index": null
+    }
+  ],
+  "contradictions": [
+    "service returned duplicate IDs within one request {'include': [], 'exclude': []}"
+  ],
+  "ledger": [
+    {
+      "call_index": 1,
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "k": 4,
+      "ok": true,
+      "confirmed": false,
+      "error": null,
+      "total": 16,
+      "returned": 4,
+      "version": "v-86194465943d6229"
+    }
+  ],
+  "booths": [],
+  "scenario": "S5d_duplicate_ids",
+  "catalog_file": "catalog_big.json",
+  "cache_hits": 0,
+  "service_calls_charged": 1
+}

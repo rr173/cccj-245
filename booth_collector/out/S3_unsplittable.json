@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "catalog_version": "v-86194465943d6229",
+  "root_filter": {
+    "include": [],
+    "exclude": []
+  },
+  "facets": [],
+  "page_size_k": 3,
+  "budget": 5,
+  "charged_calls": 1,
+  "free_replays": 1,
+  "stop_reason": "completed",
+  "termination_class": "unsplittable_truncation",
+  "complete": false,
+  "global": {
+    "root_exact_count": 16,
+    "distinct_rows_held": 3,
+    "missing_exact": 13,
+    "missing_bounds": [
+      13,
+      13
+    ]
+  },
+  "partition_leaves": [
+    {
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "exact_count": 16,
+      "count_origin": "response",
+      "known_distinct_rows": 3,
+      "missing_exact": 13,
+      "missing_bounds": [
+        13,
+        13
+      ],
+      "truncated_probe": true,
+      "state": "explored",
+      "note": "truncated and no usable facet remains: cannot subdivide",
+      "evidence_call_index": 1
+    }
+  ],
+  "contradictions": [],
+  "ledger": [
+    {
+      "call_index": 1,
+      "filter": {
+        "include": [],
+        "exclude": []
+      },
+      "k": 3,
+      "ok": true,
+      "confirmed": true,
+      "error": null,
+      "total": 16,
+      "returned": 3,
+      "version": "v-86194465943d6229"
+    }
+  ],
+  "booths": [
+    {
+      "id": "B10",
+      "tags": [
+        "art"
+      ],
+      "content": "sculpture garden"
+    },
+    {
+      "id": "B11",
+      "tags": [
+        "art",
+        "food",
+        "tech"
+      ],
+      "content": "expo pavilion"
+    },
+    {
+      "id": "B14",
+      "tags": [
+        "art",
+        "food"
+      ],
+      "content": "cake atelier"
+    }
+  ],
+  "scenario": "S3_unsplittable",
+  "catalog_file": "catalog_big.json",
+  "cache_hits": 1,
+  "service_calls_charged": 1
+}

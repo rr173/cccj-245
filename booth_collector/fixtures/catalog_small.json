@@ -1,0 +1,64 @@
+{
+  "version": "v-fb89904af8ba53be",
+  "booths": [
+    {
+      "id": "B01",
+      "tags": [
+        "food"
+      ],
+      "content": "noodle stand"
+    },
+    {
+      "id": "B02",
+      "tags": [
+        "tech"
+      ],
+      "content": "robot demo"
+    },
+    {
+      "id": "B03",
+      "tags": [
+        "food",
+        "tech"
+      ],
+      "content": "smart kitchen"
+    },
+    {
+      "id": "B04",
+      "tags": [
+        "art"
+      ],
+      "content": "watercolor wall"
+    },
+    {
+      "id": "B05",
+      "tags": [
+        "art",
+        "food",
+        "vip"
+      ],
+      "content": "private tasting"
+    },
+    {
+      "id": "B06",
+      "tags": [],
+      "content": "silent booth"
+    },
+    {
+      "id": "B07",
+      "tags": [
+        "tech",
+        "vip"
+      ],
+      "content": "invite-only VR"
+    },
+    {
+      "id": "B08",
+      "tags": [
+        "art",
+        "tech"
+      ],
+      "content": "generative visuals"
+    }
+  ]
+}
