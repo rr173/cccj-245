@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+"""离线出账命令行 wrapper。
+
+隔离模式（python -I）会忽略 PYTHONPATH，因此这里显式把包目录加入
+sys.path，再把参数转交给 billing.cli。可直接：
+    python3 -I scripts/bill <command> ...
+也支持可执行方式：./scripts/bill ...
+"""
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_PKG_ROOT = os.path.dirname(_HERE)
+if _PKG_ROOT not in sys.path:
+    sys.path.insert(0, _PKG_ROOT)
+
+from billing.cli import main  # noqa: E402
+
+if __name__ == "__main__":
+    raise SystemExit(main())
