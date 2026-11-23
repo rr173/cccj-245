@@ -1,0 +1,9 @@
+{
+  "accepted": true,
+  "booth_ids": [
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "catalog_version": "demo-v1"
+}

@@ -1,0 +1,6 @@
+{"kind":"exhibit","obj_id":"E1","parent_id":"B1","parent_kind":"location"}
+{"kind":"exhibit","obj_id":"E2","parent_id":"C2","parent_kind":"box"}
+{"kind":"exhibit","obj_id":"E3","parent_id":"C3","parent_kind":"box"}
+{"kind":"box","obj_id":"C1","parent_id":"B1","parent_kind":"location"}
+{"kind":"box","obj_id":"C2","parent_id":"C1","parent_kind":"box"}
+{"kind":"box","obj_id":"C3","parent_id":"B2","parent_kind":"location"}

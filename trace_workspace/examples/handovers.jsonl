@@ -1,0 +1,6 @@
+{"new_kind":"location","new_parent":"B2","obj_id":"C1","old_parent":"B1","record_id":"R3","ts":1100}
+{"new_kind":"box","new_parent":"C3","obj_id":"E1","old_parent":"B1","record_id":"R1","ts":1050}
+{"new_kind":"box","new_parent":"C2","obj_id":"C1","old_parent":"B2","record_id":"R5","ts":1200}
+{"new_kind":"location","new_parent":"B2","obj_id":"C2","old_parent":"C1","record_id":"R4","ts":1200}
+{"new_kind":"location","new_parent":"RECEIVING","obj_id":"C3","old_parent":"B2","record_id":"R6","ts":1300}
+{"new_kind":"location","new_parent":"RECEIVING","obj_id":"E1","old_parent":"C3","record_id":"R7","ts":1400}
