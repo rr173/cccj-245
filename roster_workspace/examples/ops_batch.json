@@ -1,0 +1,6 @@
+{
+  "operations": [
+    {"action": "register", "evidence_id": "ops-e1", "pair": ["1/B02", "2/B02"]},
+    {"action": "register", "evidence_id": "ops-e2", "pair": ["3/B06", "2/B06"]}
+  ]
+}
